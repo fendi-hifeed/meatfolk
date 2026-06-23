@@ -36,9 +36,9 @@ export function Contact() {
             </a>
           </div>
           <div className="space-y-3 font-body-md text-body-md text-on-surface-variant">
-            <div className="flex items-center gap-2">
-              <MapPin size={20} className="text-outline flex-shrink-0" />
-              <span>Bandung - Jawa Barat</span>
+            <div className="flex items-start gap-2">
+              <MapPin size={20} className="text-outline flex-shrink-0 mt-0.5" />
+              <span>HiFeed Technoplex, Jl. Spatirasmi no. 52, Kab. Bandung Barat, Jawa Barat</span>
             </div>
             <a
               href={`https://wa.me/${WA_NUMBER}`}
