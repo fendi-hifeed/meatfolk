@@ -49,12 +49,7 @@ export const metadata: Metadata = {
       "Daging berkualitas dari peternak lokal Indonesia. Halal MUI & NKV Certified.",
   },
   icons: {
-    icon: [
-      {
-        url: "https://lh3.googleusercontent.com/aida-public/AB6AXuC73MNLTxLcC0SsCnEmnZMKdT3hOYvj1bEq4IdVROP82UtzBf0qcCm6mz5sx-u_OpHBBbdLY0U-wJTmdOMMbpDgoRaoBxnWNAae_pduopNwF0fplrniNgb4wOGy0LY93f6MuO4t9B2eO7_AHVRhqr5ugML3BH-3_4scpuLskknU3ACR0nXOPAW1GvHDNEE45cLMIZ89O8DuLHVBkyI-rlaz2U5652NDbCTUuKxbRT2U3rsmTyxkjQk8BNOvEGGrJBU7a6irxa7yOpM",
-        type: "image/png",
-      },
-    ],
+    icon: "/icon.png",
   },
 };
 
