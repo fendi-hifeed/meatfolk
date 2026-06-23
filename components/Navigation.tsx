@@ -4,8 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { Button } from "./ui/Button";
 import { cn } from "@/lib/utils";
+
+const WA_NUMBER = "628971304418";
+const WA_LINK = `https://wa.me/${WA_NUMBER}?text=Halo%20Meatfolk,%20saya%20tertarik%20dengan%20produk%20daging%20Anda`;
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -48,7 +50,14 @@ export function Navigation() {
         </ul>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button size="md">Belanja Sekarang</Button>
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary-container text-on-primary rounded-full px-6 py-2.5 font-title-md text-sm md:text-base hover:bg-primary transition-colors duration-300 shadow-sm inline-flex items-center justify-center"
+          >
+            Belanja Sekarang
+          </a>
         </div>
 
         <button
@@ -77,9 +86,14 @@ export function Navigation() {
               {link.label}
             </Link>
           ))}
-          <Button className="w-full mt-4" size="md">
+          <a
+            href={WA_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full mt-4 bg-primary-container text-on-primary rounded-full px-6 py-3 font-title-md text-base hover:bg-primary transition-colors duration-300 shadow-sm text-center"
+          >
             Belanja Sekarang
-          </Button>
+          </a>
         </div>
       </div>
     </nav>

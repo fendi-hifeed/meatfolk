@@ -1,6 +1,8 @@
 import { MapPin, Phone, Instagram } from "lucide-react";
-import { Button } from "./ui/Button";
 import { Badge } from "./ui/Badge";
+
+const WA_NUMBER = "628971304418";
+const WA_LINK = `https://wa.me/${WA_NUMBER}?text=Halo%20Meatfolk,%20saya%20tertarik%20dengan%20produk%20dan%20ingin%20berdiskusi%20lebih%20lanjut`;
 
 const retailers = [
   "Borma Toserba Setiabudi",
@@ -24,24 +26,38 @@ export function Contact() {
             Meatfolk.&quot;
           </p>
           <div className="flex items-center gap-4 mb-8">
-            <Button size="lg">Hubungi Kami</Button>
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary-container text-on-primary rounded-full px-8 py-4 font-title-md text-base hover:bg-primary transition-colors duration-300 inline-flex items-center justify-center"
+            >
+              Hubungi Kami
+            </a>
           </div>
           <div className="space-y-3 font-body-md text-body-md text-on-surface-variant">
             <div className="flex items-center gap-2">
               <MapPin size={20} className="text-outline flex-shrink-0" />
               <span>Bandung - Jawa Barat</span>
             </div>
-            <div className="flex items-center gap-2">
+            <a
+              href={`https://wa.me/${WA_NUMBER}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
+            >
               <Phone size={20} className="text-outline flex-shrink-0" />
               <span>0897-1304-418</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Instagram
-                size={20}
-                className="text-outline flex-shrink-0"
-              />
+            </a>
+            <a
+              href="https://instagram.com/meatfolk.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
+            >
+              <Instagram size={20} className="text-outline flex-shrink-0" />
               <span className="font-bold text-on-background">@meatfolk.id</span>
-            </div>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 bg-surface p-6 md:p-8 rounded-2xl border border-outline-variant shadow-sm">

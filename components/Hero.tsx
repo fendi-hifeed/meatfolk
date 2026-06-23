@@ -1,6 +1,9 @@
 import Image from "next/image";
-import { Button } from "./ui/Button";
 import { Badge } from "./ui/Badge";
+
+const WA_NUMBER = "628971304418";
+const WA_LINK_BELANJA = `https://wa.me/${WA_NUMBER}?text=Halo%20Meatfolk,%20saya%20tertarik%20dengan%20produk%20daging%20Anda`;
+const WA_LINK_MITRA = `https://wa.me/${WA_NUMBER}?text=Halo%20Meatfolk,%20saya%20tertarik%20untuk%20menjadi%20mitra%20bisnis`;
 
 export function Hero() {
   return (
@@ -29,10 +32,22 @@ export function Hero() {
             sampai ke meja makan Anda.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg">Belanja Sekarang</Button>
-            <Button variant="outline" size="lg">
+            <a
+              href={WA_LINK_BELANJA}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-primary-container text-on-primary rounded-full px-8 py-4 font-title-md text-base hover:bg-primary transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 inline-flex items-center justify-center"
+            >
+              Belanja Sekarang
+            </a>
+            <a
+              href={WA_LINK_MITRA}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent text-on-background border-2 border-outline rounded-full px-8 py-4 font-title-md text-base hover:bg-surface-container-high transition-all duration-300 inline-flex items-center justify-center"
+            >
               Menjadi Mitra
-            </Button>
+            </a>
           </div>
         </div>
       </div>
