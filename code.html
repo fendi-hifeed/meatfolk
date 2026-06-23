@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meatfolk - Crafted by Farmers, Enjoyed by Food Lovers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1a1c1b",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#ffdad8",
+                        "on-surface-variant": "#5b403f",
+                        "surface-container-low": "#f4f4f2",
+                        "on-secondary-fixed": "#2d1600",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#6b3b00",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary": "#98001b",
+                        "on-primary-fixed-variant": "#930019",
+                        "inverse-surface": "#2f3130",
+                        "inverse-primary": "#ffb3b0",
+                        "tertiary": "#4a4949",
+                        "surface-variant": "#e2e3e1",
+                        "on-primary-fixed": "#410006",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "primary-container": "#be1e2d",
+                        "surface-container": "#eeeeec",
+                        "secondary-fixed-dim": "#ffb874",
+                        "on-surface": "#1a1c1b",
+                        "surface-container-highest": "#e2e3e1",
+                        "surface": "#f9f9f7",
+                        "on-primary-container": "#ffd3d1",
+                        "inverse-on-surface": "#f1f1ef",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#b91a2a",
+                        "secondary-fixed": "#ffdcbf",
+                        "outline": "#8f6f6e",
+                        "surface-container-high": "#e8e8e6",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-secondary-container": "#663800",
+                        "tertiary-container": "#626161",
+                        "secondary": "#8c4f00",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#e3bebb",
+                        "surface-dim": "#dadad8",
+                        "surface-bright": "#f9f9f7",
+                        "secondary-container": "#fd9923",
+                        "on-tertiary-container": "#dfdddc",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9f7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "max-width": "1280px",
+                        "margin-desktop": "64px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "label-sm": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "display-xl": ["Hanken Grotesk"],
+                        "title-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "display-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "title-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="bg-surface dark:bg-on-background full-width top-0 z-50 sticky border-b border-outline-variant dark:border-on-surface-variant transition-colors duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-max-width mx-auto">
+<a class="flex items-center gap-2" href="#">
+<img alt="Meatfolk Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC73MNLTxLcC0SsCnEmnZMKdT3hOYvj1bEq4IdVROP82UtzBf0qcCm6mz5sx-u_OpHBBbdLY0U-wJTmdOMMbpDgoRaoBxnWNAae_pduopNwF0fplrniNgb4wOGy0LY93f6MuO4t9B2eO7_AHVRhqr5ugML3BH-3_4scpuLskknU3ACR0nXOPAW1GvHDNEE45cLMIZ89O8DuLHVBkyI-rlaz2U5652NDbCTUuKxbRT2U3rsmTyxkjQk8BNOvEGGrJBU7a6irxa7yOpM"/>
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed-dim hidden md:block">Meatfolk</span>
+</a>
+<ul class="hidden md:flex items-center gap-8">
+<li><a class="text-on-surface dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#about">About</a></li>
+<li><a class="text-on-surface dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#why-us">Why Us</a></li>
+<li><a class="text-on-surface dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#products">Products</a></li>
+<li><a class="text-on-surface dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#impact">Impact</a></li>
+<li><a class="text-on-surface dark:text-on-surface-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200" href="#contact">Contact</a></li>
+</ul>
+<div class="flex items-center gap-4">
+<button class="bg-primary-container text-on-primary rounded-full px-6 py-2.5 font-title-md text-sm md:text-base hover:bg-primary transition-colors duration-300 shadow-sm">Belanja Sekarang</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<img alt="Premium beef cuts on a wooden board" class="w-full h-full object-cover opacity-90 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoD63ZmDv8g_TZEQdCLZ37qweXK51RnEkRY6ZuUH2WYDHD2rc_pqufc0Z4gcQyHH1vAkA4xMotrbeTBBYwkjtiLCj8LCKuEcBe8De02ga98xs1lZd0xe_zyRMn7W9cnQBLHrSxDOaFKVGJQZo-I2UotGdrU--ysh4-wWWdFrIzJFFf2qiYqHsjTh_lhrfQ3wbWXsReV4b39aVsV_J-B2oSi7wKVJxHiuEub4ejus2P5yLY_c40aR-Wo4Fri-gSa7ZYv1kXiQRT28I"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-20">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-6 uppercase tracking-wider">Crafted by Farmers</span>
+<h1 class="font-display-xl text-display-xl md:text-[64px] md:leading-[72px] text-on-background mb-6">Setiap Potongan Daging Memiliki Cerita</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">Bukan hanya tentang rasa yang lezat, tetapi tentang peternak yang merawat ternaknya dengan sepenuh hati, memastikan kualitas terbaik sampai ke meja makan Anda.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary rounded-full px-8 py-4 font-title-md text-base hover:bg-primary transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Belanja Sekarang</button>
+<button class="bg-transparent text-on-background border-2 border-outline rounded-full px-8 py-4 font-title-md text-base hover:bg-surface-container-high transition-all duration-300">Menjadi Mitra</button>
+</div>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-24 bg-surface px-margin-mobile md:px-margin-desktop" id="about">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Tentang Meatfolk: <br/><span class="text-primary-container">Dari Peternak untuk Pecinta Makanan</span></h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>Kami percaya bahwa daging berkualitas bermula dari dedikasi di peternakan. Meatfolk hadir sebagai jembatan antara peternak lokal yang berdedikasi dengan konsumen yang menghargai kualitas dan transparansi.</p>
+<p>Setiap produk kami diproses dengan standar kebersihan tertinggi, menjamin kehalalan dan kesegaran yang konsisten. Kami berkomitmen untuk membangun ekosistem pangan yang lebih baik, di mana setiap pihak, dari peternak hingga konsumen, mendapatkan nilai terbaik.</p>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden shadow-sm border border-outline-variant aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="A clean, modern artisanal butchery interior with stainless steel counters, white subway tiles, and butchers in crisp white aprons carefully preparing premium cuts of meat. The lighting is bright and even, highlighting the professionalism and hygiene of the workspace. A sense of craftsmanship and dedication to quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs6eTHPAQPkMKAK9hTzD3N8k1gSQFLD2clupeNkES7NpIyv4hNe7jZ6aB09rlmuHb-MLPklrltwWo3V0mTbZWX9LZIY5ZRmhBGmWVdon_BJ6e1zZzmDm1_eZ-W8hklq1K007Rhnd2XEOhgCQsvWbpA4KmjjE5hErep94r2Jn8MS7AnwIQnN2UNHKvWHnqg88yvSLDcqIsl5naqAjPtfc2V8yoQRQHydmg0QMZEAZqJJZOyfPUrCn6Tr4oM1Fpj8gmg6YBbE4UKGFk"/>
+</div>
+</div>
+</section>
+<!-- Why Us Section (Bento Grid) -->
+<section class="py-24 bg-surface-container-lowest px-margin-mobile md:px-margin-desktop" id="why-us">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-2 block">Keunggulan Kami</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Mengapa Kami Hadir: <br/>Ketika Kualitas Menjadi Prioritas</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface rounded-2xl p-8 border border-outline-variant hover:shadow-md transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="agriculture">agriculture</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-background mb-3">Bersumber dari Peternak Terpercaya</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Kemitraan langsung dengan peternak lokal yang menerapkan standar kesejahteraan hewan yang tinggi.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-2xl p-8 border border-outline-variant hover:shadow-md transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-background mb-3">Halal &amp; Tersertifikasi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Terjamin halal oleh MUI dan memiliki sertifikasi NKV (Nomor Kontrol Veteriner) untuk keamanan pangan.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-2xl p-8 border border-outline-variant hover:shadow-md transition-shadow duration-300 group">
+<div class="w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-on-primary transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="star">star</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-background mb-3">Kualitas Konsisten</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Proses seleksi ketat (grading) untuk memastikan setiap potongan memiliki marbling dan tekstur optimal.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnership & Products -->
+<section class="py-24 bg-surface px-margin-mobile md:px-margin-desktop overflow-hidden" id="products">
+<div class="max-w-max-width mx-auto">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -inset-4 bg-surface-container-low rounded-[2rem] transform -rotate-3 z-0"></div>
+<img alt="Premium packaged meat products for retail and HORECA" class="relative z-10 w-full h-auto rounded-2xl shadow-sm border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcAYBVrf6gZXvnLh4dgaAQxGFR1kONPMVT_V7k04zFq7Du41LTgdZIlgpJwULNmhF3j0xMLbZ4liQ4LgWVpkCwSQKMnRB6esPuDnaqphQm3q_mK0idAgre3Y0AkfaDN5PzEnw6CgiF3JsQlWgZofyU9xIn25tSdrv1YhFWi69kYRj_dZdtS7I7V60BuPS4VQYnUaLiLyijG4h8KL9mFWOxb9OVB39aEr_dmrvrxX_KTqxnnvCWPlfYwwGRyfEAha72J_qT14LXhbU"/>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Produk Kami &amp; Join Kemitraan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Layanan penyediaan produk protein dan daging yang disesuaikan dengan kebutuhan distributor, retailer, dan sektor Horeca (Hotel, Restoran, Kafe). Kami menawarkan solusi supply chain yang andal dan berkualitas.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Potongan khusus sesuai permintaan (Custom Cuts)</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Kemasan vakum premium untuk kesegaran tahan lama</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container mt-1">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Pengiriman cold-chain yang termonitor</span>
+</li>
+</ul>
+<button class="bg-secondary-container text-on-secondary-container rounded-full px-8 py-4 font-title-md text-base hover:bg-secondary hover:text-on-secondary transition-colors duration-300">Jelajahi Katalog B2B</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section -->
+<section class="py-24 bg-surface-container-lowest px-margin-mobile md:px-margin-desktop border-t border-outline-variant/30" id="impact">
+<div class="max-w-max-width mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background">Dampak yang Kami Ciptakan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl mx-auto">Membangun ekosistem yang berkelanjutan dari hulu ke hilir.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Impact Item 1 -->
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-surface-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="handshake">handshake</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-background mb-2">Untuk Peternak</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Harga beli yang adil dan pendampingan praktik ternak modern.</p>
+</div>
+<!-- Impact Item 2 -->
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-surface-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="storefront">storefront</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-background mb-2">Untuk Mitra Bisnis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Kepastian pasokan, konsistensi kualitas, dan margin yang kompetitif.</p>
+</div>
+<!-- Impact Item 3 -->
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-surface-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="restaurant">restaurant</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-background mb-2">Untuk Konsumen</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Akses ke daging premium yang aman, sehat, dan lezat.</p>
+</div>
+<!-- Impact Item 4 -->
+<div class="text-center">
+<div class="w-16 h-16 mx-auto bg-surface-container rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="eco">eco</span>
+</div>
+<h4 class="font-title-md text-title-md text-on-background mb-2">Untuk Masa Depan</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Praktik produksi yang meminimalkan limbah (zero-waste approach).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof & Contact -->
+<section class="py-24 bg-surface px-margin-mobile md:px-margin-desktop" id="contact">
+<div class="max-w-max-width mx-auto bg-surface-container-low rounded-3xl p-8 md:p-16 border border-outline-variant flex flex-col md:flex-row gap-12 items-center justify-between">
+<div class="w-full md:w-1/2">
+<h2 class="font-display-xl text-[40px] leading-[48px] text-on-background mb-6">Mari Bertumbuh Bersama</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">"Kami Tidak Hanya Menjual Daging... Selamat datang di Meatfolk."</p>
+<div class="flex items-center gap-4 mb-8">
+<button class="bg-primary-container text-on-primary rounded-full px-8 py-4 font-title-md text-base hover:bg-primary transition-colors duration-300">Hubungi Kami</button>
+</div>
+<div class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">location_on</span>
+<span>Bandung - Jawa Barat</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline">phone</span>
+<span>0897-1304-418</span>
+</div>
+<div class="flex items-center gap-2">
+<img alt="Instagram" class="w-6 h-6 object-cover rounded-full hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJphhqZGRmGxo-Mg1vinYfEk0OKHvNLs4ueQCqrWMrYao6sQ9zwjH6f929abI3awX22bJ6K1EdkwnEN4LSvmc0BvM9QnJwRfdOI0Kj8GYOoFTt-SvYfM1hH7pD_LHZnHNYwX0ncmAh2YSJNnujq9XdSgUvT-UzpA0uWqpYB0HYxcrUT496Hl2AdMy_VPCm_GVzH5i0vGMwelM062RAUFlZENfS0JO_21f4TpCC5FiFr4hKSsGhRC6veM1sVIMOplvX09MmqoO6I2k"/> <!-- Hidden but requested to include context from it -->
+<span class="font-bold text-on-background">@meatfolk.id</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 bg-surface p-8 rounded-2xl border border-outline-variant shadow-sm">
+<h3 class="font-title-md text-title-md text-on-background mb-6 border-b border-outline-variant pb-4">Tersedia Di</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Borma Toserba Setiabudi</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">Kedai Nasi Berkah</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">HiFeed Technoplex</span>
+</li>
+</ul>
+<div class="mt-8 pt-6 border-t border-outline-variant flex flex-wrap gap-2">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Halal MUI</span>
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">NKV Certified</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component from JSON -->
+<footer class="bg-surface-container-low dark:bg-on-background border-t border-outline-variant full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed-dim block mb-4">Meatfolk</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant dark:text-surface-variant">© 2024 Meatfolk. Crafted by Farmers.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start mt-6 md:mt-0">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#why-us">Why Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#products">Products</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#impact">Impact</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary rounded" href="#contact">Contact</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary rounded flex items-center gap-1" href="https://instagram.com/meatfolk.id" target="_blank">
+                    Instagram
+                </a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
